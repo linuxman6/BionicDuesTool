@@ -1,12 +1,8 @@
 // 2014/11/09	0.01	‚â‚Á‚Â‚¯ŒöŠJ
+// 2014/11/12	0.02	‘«•ª‚Ìƒ^[ƒ~ƒiƒ‹‚ğ’Ç‰Á
+// 2014/11/13	0.03	ˆê•”‘‚«’¼‚µ
+//						€–Ú‡•ÏX
 
-
-
-gosub	*syokika
-gosub	*s_load
-gosub	*window_size_ichi
-gosub	*kidou_zenmen
-goto	*main
 
 
 // ----------------------------------------
@@ -14,46 +10,25 @@ goto	*main
 // ----------------------------------------
 *syokika
 
-	c1=0
-	c2=0
-	c3=0
-	c4=0
-	c5=0
-	c6=0
-	c7=0
-	c8=0
-	c9=0
-	c10=0
-	
-	c11=0
-	c12=0
-	c13=0
-	c14=0
-	c15=0
-	c16=0
-	c17=0
-	c18=0
-	c19=0
-	c20=0
-
-	c21=0
-	c22=0
-	c23=0
-	c24=0
-	c25=0
-	c26=0
-	c27=0
-	c28=0
-	c29=0
-	c30=0
+	dim c, 31
+	sdim cs, 31
 
 
+//	repeat 30
+//		c(cnt) = "a"
+//	loop
+
+// return
 
 
-
-
-return
-
+// ----------------------------------------
+// ƒTƒuƒ‹[ƒ`ƒ“ü‚è
+// ----------------------------------------
+// gosub	*syokika
+gosub	*s_load
+gosub	*window_size_ichi
+gosub	*kidou_zenmen
+goto	*main
 
 
 // ----------------------------------------
@@ -68,28 +43,26 @@ return
 
 	// ƒ^ƒCƒgƒ‹ƒo[‚Ì~ƒ{ƒ^ƒ“
 	onexit goto *quit
-	
-
 
 	// ¶‘¤
 	pos 8, 8
 
 	objsize 82,24
-	chkbox "•ŠíC•œ" , c1
-	chkbox "“G‘«~‚ß" , c2
-	chkbox "’e–ò•â‹‹" , c3
-	chkbox "Ë’ö‰„’·" , c4
-	chkbox "“GUŒ‚’â~" , c5
-	chkbox "Hack P‰ñ•œ" , c6
-	chkbox "Shield‰ñ•œ" , c7
-	chkbox "ƒgƒ‰ƒbƒv”j‰ó" , c8
-	chkbox "”àŠJ•ú" , c9
-	chkbox "Stealth‹­‰»" , c10
-	chkbox "UŒ‚—Í‹­‰»" , c18
-	chkbox "Shield‹­‰»" , c19
-	chkbox "ƒ_ƒƒŒƒW‹­‰»" , c20
-	chkbox "ƒZƒ“ƒT[Šg‘å" , c21
-	chkbox "“GˆÚ“®’â~" , c22
+	chkbox "•ŠíC•œ" , c(1)
+//	chkbox "“G‘«~‚ß" , c(2)
+	chkbox "’e–ò•â‹‹" , c(3)
+	chkbox "Ë’ö‰„’·" , c(4)
+	chkbox "HackP‰ñ•œ" , c(6)
+	chkbox "Shield‰ñ•œ" , c(7)
+	chkbox "UŒ‚—Í‹­‰»" , c(18)	
+	chkbox "Stealth‹­‰»" , c(10)
+	chkbox "Shield‹­‰»" , c(19)
+	chkbox "ƒ_ƒƒŒƒW‹­‰»" , c(20)
+	chkbox "ƒZƒ“ƒT[Šg‘å" , c(21)
+	chkbox "ƒgƒ‰ƒbƒv”j‰ó" , c(8)
+	chkbox "”àŠJ•ú" , c(9)
+	chkbox "“GUŒ‚’â~" , c(5)
+	
 
 
 	// ƒ{ƒ^ƒ“
@@ -108,27 +81,23 @@ return
 	pos 90, 8
 
 	objsize 82,24
-	chkbox "Exo€–S" , c11
-	chkbox "”š”­" , c12
-	chkbox "StealthPÁ¸" , c13
-	chkbox "HackPÁ¸" , c14
-	chkbox "’e–òÁ¸" , c15
-	chkbox "“GË’ö‰„’·" , c16
-	chkbox "“GUŒ‚—ÍUP" , c17
-	chkbox "“G‹¥–\‰»" , c23
-	chkbox "’e–òÁ¸" , c24
-	chkbox "•Ší”j‰ó" , c24
-	chkbox "“Gs“® +1" , c26
-	chkbox "áŠQ•¨”š”­" , c27
-	chkbox "“GË’ö -2" , c28
-	chkbox "“G‘S‘ÌŒx•ñ" , c29
-
-
+	chkbox "•Ší”j‰ó" , c(24)
+	chkbox "’e–òÁ¸" , c(15)
+	chkbox "“GË’ö‰„’·" , c(16)
+	chkbox "HackPÁ¸" , c(14)
+	chkbox "Exo€–S" , c(11)
+	chkbox "“G‹¥–\‰»" , c(23)
+	chkbox "StealthPÁ¸" , c(13)
+	chkbox "”š”­" , c(12)
+	chkbox "áŠQ•¨”š”­" , c(27)
+//	chkbox "“GUŒ‚—ÍUP" , c(17)
+//	chkbox "’e–òÁ¸" , c(24)
+	chkbox "“Gs“® +1" , c(26)
+	chkbox "“GË’ö -2" , c(28)
+	chkbox "“G‘S‘ÌŒx•ñ" , c(29)
+	chkbox "“GˆÚ“®’â~" , c(22)
 
 stop
-
-
-
 
 
 // ----------------------------------------
@@ -136,11 +105,11 @@ stop
 // ----------------------------------------
 *window_size_ichi
 	if ichi_kioku = 0 {
-						screen 0, 180, 400, , 0, 0
+						screen 0, 180, 350, , 0, 0
 						return
 	}
 	else {
-						screen 0, 180, 400, , screenx, screeny
+						screen 0, 180, 350, , screenx, screeny
 						return
 	}
 
@@ -160,7 +129,6 @@ return
 	}
 
 return
-
 
 
 // ----------------------------------------
@@ -183,57 +151,27 @@ return
 	noteadd ""+screeny, 2, 1
 
 	// ƒ^[ƒ~ƒiƒ‹
-	noteadd ""+c1, 3, 1
-	noteadd ""+c2, 4, 1
-	noteadd ""+c3, 5, 1
-	noteadd ""+c4, 6, 1
-	noteadd ""+c5, 7, 1
-	noteadd ""+c6, 8, 1
-	noteadd ""+c7, 9, 1
-	noteadd ""+c8, 10, 1
-	noteadd ""+c9, 11, 1
-	noteadd ""+c10, 12, 1
-
-	noteadd ""+c11, 13, 1
-	noteadd ""+c12, 14, 1
-	noteadd ""+c13, 15, 1
-	noteadd ""+c14, 16, 1
-	noteadd ""+c15, 17, 1
-	noteadd ""+c16, 18, 1
-	noteadd ""+c17, 19, 1
-	noteadd ""+c18, 20, 1
-	noteadd ""+c19, 21, 1
-	noteadd ""+c20, 22, 1
+	tarminal_kuri = 3
+	repeat 31
+		noteadd ""+c(cnt), tarminal_kuri , 1
+		tarminal_kuri = tarminal_kuri + 1
+	loop
 
 
 	//ˆÊ’u‹L‰¯‚Ìon/off
-	noteadd ""+ichi_kioku, 23, 1
-
-
-	// ƒ^[ƒ~ƒiƒ‹’Ç‰Á•ª
-	noteadd ""+c21, 24, 1
-	noteadd ""+c22, 25, 1
-	noteadd ""+c23, 26, 1
-	noteadd ""+c24, 27, 1
-	noteadd ""+c25, 28, 1
-	noteadd ""+c26, 29, 1
-	noteadd ""+c27, 30, 1
-	noteadd ""+c28, 31, 1
-	noteadd ""+c29, 32, 1
-
+	noteadd ""+ichi_kioku, 33, 1
 
 	//	ƒf[ƒ^‚ğ‘‚«o‚·
 	notesave "config.ini"
 
-end
 
+
+end
 
 
 // ----------------------------------------
 //@İ’è“Ç
 // ----------------------------------------
-
-
 
 *s_load
 	notesel loadmem
@@ -251,82 +189,26 @@ end
 	screeny = int(screeny)
 
 	// ƒ^[ƒ~ƒiƒ‹
-	noteget c1, 3
-	noteget c2, 4
-	noteget c3, 5
-	noteget c4, 6
-	noteget c5, 7
-	noteget c6, 8
-	noteget c7, 9
-	noteget c8, 10
-	noteget c9, 11
 
-	noteget c10, 12
-	noteget c11, 13
-	noteget c12, 14
-	noteget c13, 15
-	noteget c14, 16
-	noteget c15, 17
-	noteget c16, 18
-	noteget c17, 19
-	noteget c18, 20
-	noteget c19, 21
-	noteget c20, 22
-
-	noteget c21, 24
-	noteget c22, 25
-	noteget c23, 26
-	noteget c24, 27
-	noteget c25, 28
-	noteget c26, 29
-	noteget c27, 30
-	noteget c28, 31
-	noteget c29, 32
+	tarminal_kuri_l = 3
+	repeat 31
+		noteget cs(cnt), tarminal_kuri_l
+		tarminal_kuri_l = tarminal_kuri_l + 1
+	loop
 
 
-	c1 = int(c1)
-	c2 = int(c2)
-	c3 = int(c3)
-	c4 = int(c4)
-	c5 = int(c5)
-	c6 = int(c6)
-	c7 = int(c7)
-	c8 = int(c8)
-	c9 = int(c9)
-
-	c10 = int(c10)
-	c11 = int(c11)
-	c12 = int(c12)
-	c13 = int(c13)
-	c14 = int(c14)
-	c15 = int(c15)
-	c16 = int(c16)
-	c17 = int(c17)
-	c18 = int(c18)
-	c19 = int(c19)
-	c20 = int(c20)
-
-
-	c21 = int(c21)
-	c22 = int(c22)
-	c23 = int(c23)
-	c24 = int(c24)
-	c25 = int(c25)
-	c26 = int(c26)
-	c27 = int(c27)
-	c28 = int(c28)
-	c29 = int(c29)
-
+	repeat 31
+		c(cnt) = int(cs(cnt))
+//		mes ""+c(cnt)
+	loop
 
 
 
 	// ƒEƒBƒ“ƒhƒEˆÊ’u‚Ì•œŒ³
-	noteget ichi_kioku, 23
+	noteget ichi_kioku, 33
 	ichi_kioku = int(ichi_kioku)
 
 return
-
-
 
 
 // ----------------------------------------
@@ -362,7 +244,7 @@ return
 	chkbox "I—¹‚ÌˆÊ’u‚ğ‹L‰¯" , ichi_kioku
 
 	mes ""
-	mes "        Ver 0.2"
+	mes "        Ver 0.3"
 	mes "     @linuxman6"
 
 
@@ -372,7 +254,6 @@ return
 	button "OK", *config_ok
 
 	stop
-
 
 
 *config_ok
@@ -387,50 +268,17 @@ return
 					goto *main
 	}
 
-
-
 goto *main
+
 
 // ----------------------------------------
 // ƒŠƒZƒbƒgƒ{ƒ^ƒ“
 // ----------------------------------------
 *reset
 
-	c1=0
-	c2=0
-	c3=0
-	c4=0
-	c5=0
-	c6=0
-	c7=0
-	c8=0
-	c9=0
-	c10=0
-	
-	c11=0
-	c12=0
-	c13=0
-	c14=0
-	c15=0
-	c16=0
-	c17=0
-	c18=0
-	c19=0
-	c20=0
-
-	c21=0
-	c22=0
-	c23=0
-	c24=0
-	c25=0
-	c26=0
-	c27=0
-	c28=0
-	c29=0
-	c30=0
-
+	repeat 30
+		c(cnt) = 0
+	loop
 
 goto *main
-
-
 
