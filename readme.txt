@@ -32,4 +32,5 @@
 
 ======================================================================
                                                by Linuxman（りなくす）
+                                                 clearorzhm@gmail.com
                               　　　    https://twitter.com/linuxman6
